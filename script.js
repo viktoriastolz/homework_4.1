@@ -8,8 +8,6 @@ if (userName === null) {
   alert("Error: Name cannot be empty or whitespace");
 } else if (!/^[a-zA-Zа-яА-ЯёЁїЇіІєЄґҐ]+$/.test(userName.trim())) {
   alert("Error: Name can only contain letters");
-} else if (/\s/.test(userName)) {
-  alert("Error: Name cannot contain spaces");
 } else if (userName.trim().length < 2) {
   alert("Error: Name must be at least 2 characters long");
 } else if (userName.trim().length > 50) {
