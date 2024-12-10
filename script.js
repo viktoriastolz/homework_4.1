@@ -1,6 +1,6 @@
 "use strict";
 
-const userName = prompt("Add your name");
+const userName = prompt("What's your name?");
 
 if (userName === null) {
   alert("Ok, bye");
