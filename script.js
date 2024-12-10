@@ -14,11 +14,6 @@ if (userName === null) {
   alert("Error: Name must be at least 2 characters long");
 } else if (userName.trim().length > 50) {
   alert("Error: Name must not exceed 50 characters");
-} else if (
-  userName.trim().charAt(0) !== userName.trim().charAt(0).toUpperCase() || 
-  userName.trim().slice(1) !== userName.trim().slice(1).toLowerCase()
-) {
-  alert("Error: Name must start with a capital letter, and the rest must be lowercase");
 } else {
   alert(`Hello, ${userName.trim()}! How are you?`);
 }
