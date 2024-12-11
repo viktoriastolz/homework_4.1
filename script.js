@@ -2,9 +2,7 @@
 
 const userName = prompt("What's your name?");
 
-if (userName === null) {
-  alert("Ok, bye");
-} else if (!userName.trim()) {
+if (!userName?.trim()) {
   alert("Error: Name cannot be empty or whitespace");
 } else if (!isNaN(userName.trim())) { 
   alert("Error: Name cannot be a number");
